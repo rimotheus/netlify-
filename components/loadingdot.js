@@ -1,3 +1,4 @@
+//used for future UI with chatbot replies
 const LoadingDot = () => {
     return (
       <div className='flex space-x-2 justify-center items-center'>

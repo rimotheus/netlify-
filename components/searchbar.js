@@ -14,9 +14,6 @@ const SearchInput = ({ onSearchChange }) => {
       if (typeof searchQuery !== "string") {
         return;
       }
-  
-      const encodedSearchQuery = encodeURI(searchQuery);
-      router.push(`/search?q=${encodedSearchQuery}`);
     };
   
     const handleChange = (event) => {
@@ -27,16 +24,15 @@ const SearchInput = ({ onSearchChange }) => {
     };
   
     return (
-      <form onSubmit={onSearch} className="flex items-center justify-center w-full">
-        <div className="flex items-center w-full">
-        
+      <form onSubmit={onSearch} className="flex items-center justify-center w-auto">
+         <div className="relative flex items-center w-full">
         <input
-          value={searchQuery || ""}
+          value={searchQuery || ''}
           onChange={handleChange}
-          className="pl-5 pr-3 py-2 w-full text-black bg-grey  rounded-full focus:outline-none focus:ring-2 focus:ring-opacity-25 focus:ring-gray-400 placeholder-gray-500"
-          placeholder="Search..."
-      />
-      <FaSearch className="ml-3 mr-2 text-gray-400 stroke-2" />
+          className="pl-5 pr-10 py-2 w-full text-black bg-dark-grey rounded-full placeholder-login-gray"
+          placeholder="Search"
+        />
+        <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-login-gray stroke-3" />
       </div>
       </form>
     );

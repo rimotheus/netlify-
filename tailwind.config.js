@@ -10,6 +10,15 @@ module.exports = {
     ],
     theme: {
       extend: {
+        width: {
+          '100': '25 rem', 
+          '150': '37.5rem', 
+        },
+       
+        spacing: {
+          '25': '7.0rem',  
+          '50': '12.5rem',
+        },
         colors: {
           "dark-green": "#0A6160",
           "light-green": "#E6EDED",
@@ -17,6 +26,8 @@ module.exports = {
           "light-gray": "#F0F0F0",
           "darker-green": "#074641",
           "index-blue":"#379AE6",
+          "index-blue-button":"#9EC3E7",
+          "popup-blue":"#C3E4FE",
           "popup-blue":"C3E4FE",
           "baby-blue":"#B9E5FF",
           "blue":"379AE6",
@@ -24,6 +35,16 @@ module.exports = {
           "grey" : "#F2F8FE",
           "dark-grey": "#D9D9D9",
           "scenario":"A5D5FA",
+          "login-gray":"#393D42",
+          "textbox-gray":"#D9D9D9",
+          "black":"000000",
+          "pagination-text":"#7D7E80",
+          "black":"#000000",
+        
+        },
+        backgroundImage: theme => ({
+          'login': "url('/login.svg')",
+
           
         
         },

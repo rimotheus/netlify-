@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, forwardRef, useImperativeHandle } from "react";
 
-
+// not in use can delete
 //either web speech api or mediaspeech api
 // Forward ref to access component methods from parent
 const MicrophoneComponent = forwardRef((props, ref) => {
@@ -81,7 +81,7 @@ const MicrophoneComponent = forwardRef((props, ref) => {
     <div className="flex items-center justify-center w-full">
       <div className="w-full">
         {isRecording && (
-          <div className="w-1/4 m-auto rounded-md border p-4 bg-white">
+          <div className="w-1/4 m-auto rounded-md border p-4 bg-white text-black">
             <div className="flex-1 flex w-full justify-between">
               <div className="space-y-1">
                 <p className="text-sm font-medium leading-none">
