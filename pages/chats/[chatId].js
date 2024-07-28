@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Layout from '../../components/layout';
-import ChatList from '../../components/Chatlist';
-import ChatRoom from '../../components/Chatroom';
+import ChatList from '../../components/ChatList';
+import ChatRoom from '../../components/ChatRoom';
 
 const mockChats = [
   {
